@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/books")
+@RequestMapping("/users")
 public class UserController {
     private final UserService userService;
 
@@ -25,7 +25,7 @@ public class UserController {
     }
 
     @PostMapping
-    public User save(@RequestBody User book){
+    public User save(@RequestBody User user){
         return userService.save(book);
     }
 
