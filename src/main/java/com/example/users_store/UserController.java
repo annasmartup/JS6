@@ -26,7 +26,7 @@ public class UserController {
 
     @PostMapping
     public User save(@RequestBody User user){
-        return userService.save(book);
+        return userService.save(user);
     }
 
     @PutMapping("/{id}")
